@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <button class="create-button">Create</button>
+        <div class="signup-profile-icon">
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+    <!-- Aside with Font Awesome Icons -->
+    <div class="custom-aside">
+        <img src="1.jpg" alt="">
+        <!-- Home Icon -->
+        <i class="fas fa-home" onclick="handleIconClick(event)"></i>
+        <!-- Amazon Icon -->
+        <i class="fab fa-amazon" onclick="handleIconClick(event)"></i>
+        <!-- Cinema Icon -->
+        <i class="fas fa-film" onclick="handleIconClick(event)"></i>
+        <!-- Grid Icon -->
+        <i class="fas fa-th" onclick="handleIconClick(event)"></i>
+        <!-- Stat Icon -->
+        <i class="fas fa-chart-bar" onclick="handleIconClick(event)"></i>
+    </div>
+    <main>
+        <div class="header">
+            <h4>Quick create</h4>
+            <h4>Your Gallery</h4>
+            <h4>Usage</h4>
+        </div>
+        <div class="custom-container">
+            <!-- First Box -->
+            <div class="custom-box">
+                <div class="box-text">
+                    Generate video from any URL (Eg. Amazon)
+                </div>
+
+                <!-- Input Search Bar -->
+                <input type="text" class="custom-input" placeholder="https://www.amazon.com">
+                <p style="padding-top: 20px; display: flex; font-weight: bold; padding-bottom: 8px;">Or</p>
+
+                <div class="f-btn">
+                    <button class="custom-btn">Create from scratch</button>
+                    <button class="custom-btn">Create from templates</button>
+                </div>
+            </div>
+
+            <!-- Second Box -->
+            <div class="custom-box">
+                <!-- Image with No Image Here icon -->
+                <i class="fas fa-image custom-image no-image-icon"></i>
+
+                <!-- Text -->
+                <div class="box-text two-line-text">
+                    <span>No videos yet,</span> <br>
+                    <span>Create one today</span>
+                </div>
+            </div>
+
+            <!-- Third Box -->
+            <div class="custom-box">
+                <article class="widget">
+                    <div class="widget-info">
+                        <p>Total</p>
+                        <h4>2,000</h4>
+                        <span class="green"> <!-- Assuming this is where your icon and percentage go -->
+                            <!-- Your SVG and percentage span remain unchanged -->
+                        </span>
+                    </div>
+                    <div class="widget-circle">
+                        <svg width="110" height="110" viewBox="0 0 100 100">
+                            <!-- Outer circle with a thicker stroke -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#e5e5e5" stroke-width="20"></circle>
+
+                            <!-- Inner circle (pie chart) with a thicker stroke and unfilled -->
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="rgb(50,174,213)" stroke-width="20"
+                                stroke-dasharray="126 251.2"> <!-- Adjusted stroke-dasharray for 40% (0.4) filled -->
+                            </circle>
+                        </svg>
+                    </div>
+                    <p style="display: flex; align-items: center; justify-content: center; "> Credit left <span>
+                            100%</span>
+                    </p>
+                </article>
+            </div>
+        </div>
+        <!-- Unique Text "Templates" outside the box -->
+
+        <!-- Unique Inner box content -->
+        <h4 style="margin-left: 6pc;">Templates</h4>
+        <div class="unique-outer">
+            <div class="unique-inner">
+                <!-- Unique Search input with search icon -->
+                <div class="unique-search">
+                    <input type="text" placeholder="Search here" style="border: none; outline: none; flex-grow: 1;">
+                    <i class="fas fa-search" style="margin-left: 10px;"></i>
+                </div>
+
+                <!-- Unique Dropdown nav btns with icon -->
+                <div class="un-dro">
+                    <div class="unique-dropdown">
+                        All use cases <i class="fas fa-angle-down" style="margin-left: 58px;"></i>
+                    </div>
+                    <div class="unique-dropdown" style="margin-left: 10px;">
+                        <!-- Added some margin between dropdowns -->
+                        Potrait <i class="fas fa-angle-down" style="margin-left: 102px;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Unique Images section -->
+            <div class="unique-images">
+                <!-- Repeat for 8 images -->
+
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Image motion video</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Sujatra product...</p>
+                        <p> 3 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="2.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head"> Shorts</p>
+                        <p>1 image, Images list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">General multi image</p>
+                        <p>3 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">product promotion 1</p>
+                        <p>3 Images</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="2.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">video promotion 1</p>
+                        <p>1 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Product promotion...</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Single image product</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="unique-images">
+                <!-- Repeat for 8 images -->
+
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Image motion video</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Sujatra product...</p>
+                        <p> 3 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="2.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head"> Shorts</p>
+                        <p>1 image, Images list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">General multi image</p>
+                        <p>3 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">product promotion 1</p>
+                        <p>3 Images</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="2.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">video promotion 1</p>
+                        <p>1 Image</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.jpg" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Product promotion...</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+                <div class="unique-image-item">
+                    <img src="1.png" alt="Image 1">
+                    <div class="image-details">
+                        <p class="head">Single image product</p>
+                        <p>Image list</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
